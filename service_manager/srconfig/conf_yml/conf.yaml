@@ -1,0 +1,61 @@
+---
+# Rename file to secrets.yml to get started for development or test
+
+development:
+  API_URL: http://localhost:3000/api/v1
+  APP_URL: http://localhost:9292
+  SESSION_SECRET: ND3mZpWrmpAEEjke2N7eJn65IrUPLtCxwYSaql1b0L0+LgaxMPik2Eb9DEYsNSV4SWC4FCOdKtsQ8IIangRYDQ==
+  MSG_KEY: Hb9DLQWSXyisHm8CArBXaIw9crv/wpKTVObm6u8xhxw=
+  REDIS_URL: <provision Redis instance; provide non-TLS URL for dev/test>
+  SIGNING_KEY: nNuYJVHnMTPfArqFo3Rb81xvXoPDuqcdoUhjWVfGooE=
+  REDIS_TLS_URL: <provision Redis instance; provide redis URL for dev/test>
+  GH_OAUTH_URL: https://sarptest123.com/login/oauth/authorize
+  GH_TOKEN_URL: https://sarptest123.com/login/oauth/access_token
+  GH_SCOPE: user:email
+  GH_CLIENT_ID: <provision ID/SECRET on Github>
+  GH_CLIENT_SECRET: <provision ID/SECRET on Github>
+  GOOGLE_API_KEY: Hb9DLQWSXyisHm8CArBXaIw9crv
+  GOOGLE_OAUTH_URL: https://accounts.testsarp.com/o/oauth2/auth
+  GOOGLE_TOKEN_URL: https://accounts.testsarp.com/o/oauth2/token
+  GOOGLE_SCOPE: user:email
+  GOOGLE_CLIENT_ID: <provision ID/SECRET on Github>
+  GOOGLE_CLIENT_SECRET: <provision ID/SECRET on Github>
+
+test:
+  API_URL: http://localhost:3000/api/v1
+  APP_URL: http://localhost:9292
+  SESSION_SECRET: ND3mZpWrmpAEEjke2N7eJn65IrUPLtCxwYSaql1b0L0+LgaxMPik2Eb9DEYsNSV4SWC4FCOdKtsQ8IIangRYDQ==
+  MSG_KEY: Hb9DLQWSXyisHm8CArBXaIw9crv/wpKTVObm6u8xhxw=
+  REDIS_URL: <provision Redis instance; provide non-TLS URL for dev/test>
+  SIGNING_KEY: nNuYJVHnMTPfArqFo3Rb81xvXoPDuqcdoUhjWVfGooE=
+  REDIS_TLS_URL: <provision Redis instance; provide redis URL for dev/test>
+  GH_OAUTH_URL: https://sarptest123.com/login/oauth/authorize
+  GH_TOKEN_URL: https://sarptest123.com/login/oauth/access_token
+  GH_SCOPE: user:email
+  GH_CLIENT_ID: <provision ID/SECRET on Github>
+  GH_CLIENT_SECRET: <provision ID/SECRET on Github>
+  GOOGLE_API_KEY: <google api key>
+  GOOGLE_OAUTH_URL: https://accounts.testsarp.com/o/oauth2/auth
+  GOOGLE_TOKEN_URL: https://accounts.testsarp.com/o/oauth2/token
+  GOOGLE_SCOPE: user:email
+  GOOGLE_CLIENT_ID: <provision ID/SECRET on Github>
+  GOOGLE_CLIENT_SECRET: <provision ID/SECRET on Github>
+
+production:
+  API_URL: http://localhost:3000/api/v1
+  APP_URL: http://localhost:9292
+  SESSION_SECRET: <rake generate:session_secret>
+  MSG_KEY: <rake generate:msg_key>
+  SIGNING_KEY: <provision on API side through rake command>
+  REDIS_TLS_URL: <provision Redis instance; provide TLS rediss URL for production>
+  GH_OAUTH_URL: https://sarptest123.com/login/oauth/authorize
+  GH_TOKEN_URL: https://sarptest123.com/login/oauth/access_token
+  GH_SCOPE: user:email
+  GH_CLIENT_ID: <provision ID/SECRET on Github>
+  GH_CLIENT_SECRET: <provision ID/SECRET on Github>
+  GOOGLE_API_KEY: <google api key>
+  GOOGLE_OAUTH_URL: https://accounts.testsarp.com/o/oauth2/auth
+  GOOGLE_TOKEN_URL: https://accounts.testsarp.com/o/oauth2/token
+  GOOGLE_SCOPE: user:email
+  GOOGLE_CLIENT_ID: <provision ID/SECRET on Github>
+  GOOGLE_CLIENT_SECRET: <provision ID/SECRET on Github>
